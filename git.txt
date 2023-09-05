@@ -1,0 +1,56 @@
+//To add file in commit
+git add filePath
+
+//To Commit with message
+git commit -m 'Commit message'
+
+//To revert file changes to its head. Replace with head
+git checkout -- libs/logs/advertiserApi/advertiserApi.log
+
+//To skip ng lint and commit the code
+git commit -m 'ng lint error reverted back' --no-verify
+
+//To reset commit below command
+// Below HEAD~1 means it will reset to last 1 commit, HEAD~2 means it will reset to last 2 commits.
+git reset HEAD~1
+git reset HEAD~2
+git reset HEAD~3
+
+git reset --soft HEAD^
+git reset --hard HEAD^
+
+//To merge and resolve conflict by using Ours changes or Theirs changes.
+git checkout --Xours --Xtheirs
+
+git merge --abort
+
+//To create new branch
+git branch branchName
+
+//Display all branches
+//For local branches
+git branch 
+//For remote branches
+git branch -r
+
+// delete branch locally
+git branch -d localBranchName
+
+// delete branch remotely
+git push origin --delete remoteBranchName
+
+//Git stash changes temporary
+git stash save "Saving data of story"
+
+//View stashes
+git stash list
+
+//Bring stash back and remove from stash
+git stash pop
+
+//Bring stash back and keep in stash
+git stash apply
+
+//Remove from stash
+git stash drop
+
